@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>For You 💗</title>
 
   <!-- CSS -->
@@ -14,122 +15,118 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
-<body style="background-image: url('assets/images/backgrounds/bg-pink.jpg'); background-size: cover; background-position: center;">
+<body
+  style="background-image: url('assets/images/backgrounds/bg-pink.jpg'); background-size: cover; background-position: center;">
 
-  <!-- 🌸 BACKGROUND DECOR (Hearts & Roses Layer) -->
-  <div class="floating-hearts">
-    <img src="assets/images/hearts/heart-glow.svg" alt="heart-glow" style="display:none;">
-    <img src="assets/images/hearts/heart-outline.svg" alt="heart-outline" style="display:none;">
+
+  <!-- Music Toggle Button -->
+  <div class="music-btn" id="musicBtn">
+    🎵
   </div>
 
-  <div class="floating-roses">
-    <img src="assets/images/roses/rose.png" alt="rose" style="display:none;">
-    <img src="assets/images/roses/rose-petal.png" alt="rose-petal" style="display:none;">
-    <img src="assets/images/roses/rose-bloom.svg" alt="rose-bloom" style="display:none;">
-  </div>
+  <!-- Background Decor -->
+  <div class="floating-hearts"></div>
 
-  <!-- ================= SCENE 1 ================= -->
-  <section class="scene scene-1 active">
-    <div class="content">
-      <img src="assets/images/hearts/heart_fill.png" alt="big-heart" class="heart big-heart">
-      <h1 class="type-text">My Love ♥</h1>
-      <h1 class="type-text">मैं आपको अपने दिल की एक बात बताना चाहता हूँ, क्या आप सुनना चाहेंगे?</h1>
-      <button class="btn next-btn" data-next="2">हा 😀</button>
-    </div>
-  </section>
+  <div class="glass-container">
+    <div class="scene-wrapper">
 
-  <!-- ================= SCENE 2 ================= -->
-  <section class="scene scene-2">
-  <!-- VIDEO AT THE TOP -->
- 
+      <!-- ================= SCENE 1 ================= -->
+      <section class="scene scene-1 active">
+        <img src="assets/images/hearts/heart_fill.png" alt="big-heart" class="heart big-heart">
+        <h1 class="type-text">My Love ♥</h1>
+        <p class="type-text">मैं आपको अपने दिल की एक बात बताना चाहता हूँ<br>क्या आप सुनना चाहेंगे?</p>
+        <button class="btn next-btn" data-next="2">हा 😀</button>
+      </section>
 
-  <div class="content">
-     <video class="scene-video" autoplay muted loop playsinline>
-    <source src="assets/images/fattuvideo.mp4" type="video/mp4">
-     </video>
-    <h2>मैं ये बात आपको बहुत दिनों से कहना चाहता था।</h2>
-    <p>लेकिन सामने से कहने की हिम्मत नहीं हो पा रही थी।</p>
-    <button class="btn next-btn" data-next="3">कहो क्या बात है ?🤨 </button>
-  </div>
-</section>
-
-
-  <!-- ================= SCENE 3 ================= -->
-  <section class="scene scene-3">
-    <div class="content">
-    <video class="scene-video" autoplay muted loop playsinline>
-    <source src="assets/images/wait.mp4" type="video/mp4">
-     </video>      <h2>इसलिए मैंने ये तरीका चुना।</h2>
-      <p>क्योंकि यहाँ मैं अपने दिल की बात</p>
-      <p>थोड़ा आसान और सच्चे तरीके से कह सकता हूँ।</p>
-      <button class="btn next-btn" data-next="4">
-        हा बोलो भी 😳</button>
-    </div>
-  </section>
-
-  <!-- ================= SCENE 4 ================= -->
-  <section class="scene scene-4">
-    <div class="content">
+      <!-- ================= SCENE 2 ================= -->
+      <section class="scene scene-2">
         <video class="scene-video" autoplay muted loop playsinline>
-    <source src="assets/images/waiting.mp4" type="video/mp4">
-     </video> 
-      <h2>
-थक गए होंगे थोड़ा रुक भी जाओ</h2>
-      <button class="btn next-btn" data-next="5">
-बताओ 😀</button>
+          <source src="assets/images/fattuvideo.mp4" type="video/mp4">
+        </video>
+        <h2>मैं ये बात आपको बहुत दिनों से कहना चाहता था।</h2>
+        <p>लेकिन सामने से कहने की हिम्मत नहीं हो पा रही थी।</p>
+        <button class="btn next-btn" data-next="3">कहो क्या बात है ?🤨</button>
+      </section>
+
+      <!-- ================= SCENE 3 ================= -->
+      <section class="scene scene-3">
+        <video class="scene-video" autoplay muted loop playsinline>
+          <source src="assets/images/wait.mp4" type="video/mp4">
+        </video>
+        <h2>इसलिए मैंने ये तरीका चुना।</h2>
+        <p>क्योंकि यहाँ मैं अपने दिल की बात<br>थोड़ा आसान और सच्चे तरीके से कह सकता हूँ।</p>
+        <button class="btn next-btn" data-next="4">हा बोलो भी 😳</button>
+      </section>
+
+      <!-- ================= SCENE 4 ================= -->
+      <section class="scene scene-4">
+        <video class="scene-video" autoplay muted loop playsinline>
+          <source src="assets/images/waiting.mp4" type="video/mp4">
+        </video>
+        <h2>थक गए होंगे थोड़ा रुक भी जाओ</h2>
+        <button class="btn next-btn" data-next="5">बताओ 😀</button>
+      </section>
+
+      <!-- ================= SCENE 5 ================= -->
+      <section class="scene scene-5">
+        <video class="scene-video" autoplay muted loop playsinline>
+          <source src="assets/images/dil.mp4" type="video/mp4">
+        </video>
+        <h1>My Love ♥</h1>
+        <p>मैं आपको इम्प्रेस करने की कोशिश नहीं कर रहा हूँ।<br>मैं बस आपको अपने दिल की बात बताना चाहता हूं</p>
+        <button class="btn next-btn" data-next="6">हा हा बोलो 😐</button>
+      </section>
+
+      <!-- ================= SCENE 6 ================= -->
+      <section class="scene scene-6">
+        <video class="scene-video" autoplay muted loop playsinline>
+          <source src="assets/images/janteho.mp4" type="video/mp4">
+        </video>
+        <h2>जानते हो फिर भी अंजान बनते हो,</h2>
+        <p>पूछते हो मुझे क्या पसंद है,<br>जवाब खुद हो फिर भी सवाल करते हो।</p>
+        <button class="btn next-btn" data-next="7">कुछ भी 🤔</button>
+      </section>
+
+      <!-- ================= SCENE 7 ================= -->
+      <section class="scene scene-7">
+        <video class="scene-video" autoplay muted loop playsinline>
+          <source src="assets/images/dil.mp4" type="video/mp4">
+        </video>
+        <h2>My Love सचमैं मुझे आप बहोत पसंद हैं।</h2>
+        <h3>क्या आप मुझसे बात करना पसंद करोगे? ☕</h3>
+
+        <div class="final-buttons">
+          <button class="btn yes-btn">YES</button>
+          <button class="btn wait-btn" id="moveBtn">NO</button>
+        </div>
+      </section>
+
     </div>
-  </section>
+  </div>
 
-  <!-- ================= SCENE 5 ================= -->
-  <section class="scene scene-5">
-    <div class="content">
-    <video class="scene-video" autoplay muted loop playsinline>
-    <source src="assets/images/dil.mp4" type="video/mp4">
-     </video>
-           <h1 class="type-text">My Love ♥</h1>
+  <!-- SNAPCHAT MODAL -->
+  <div class="modal-overlay" id="snapModal">
+    <div class="modal-box">
+      <img src="assets/images/hearts/heart_fill.png" width="60" alt="Heart" style="margin-bottom: 20px;">
+      <h2>Yay! You said Yes! 💖</h2>
+      <p>Here is my Snapchat ID, add me:</p>
 
-      <h2>मैं आपको इम्प्रेस करने की कोशिश नहीं कर रहा हूँ।</h2>
-      <h3>मैं बस आपको अपने दिल की बात बताना चाहता हूं</h3>
-      <button class="btn next-btn" data-next="6">
-हा हा बोलो 😐</button>
-    </div>
-  </section>
-
-  <!-- ================= SCENE 6 ================= -->
-  <section class="scene scene-6">
-    <div class="content">
-         <video class="scene-video" autoplay muted loop playsinline>
-    <source src="assets/images/janteho.mp4" type="video/mp4">
-     </video> 
-      <h2>जानते हो फिर भी अंजान बनते हो,</h2>
-      <h3>पूछते हो मुझे क्या पसंद है,</h3>
-      <h3>जवाब खुद हो फिर भी सवाल करते हो।</h3>
-      <button class="btn next-btn" data-next="7">कुछ भी 🤔</button>
-    </div>
-  </section>
-
-  <!-- ================= SCENE 7 ================= -->
-  <section class="scene scene-7">
-    <div class="content">
-
-         <video class="scene-video" autoplay muted loop playsinline>
-    <source src="assets/images/dil.mp4" type="video/mp4">
-     </video>
-      <h2>My Love
-        सचमैं मुझे आप बहोत पसंद हैं।</h2>
-      <h3>और मैं आपसे बस इतना पूछना चाहता हूँ…</h3>
-      <h2>answer</h2>
-
-      <div class="final-buttons">
-        <button class="btn yes-btn">क्या आप मुझसे बात करना पसंद करोगे? ☕</button>
-        <button class="btn wait-btn">मुझे थोड़ा समय चाहिए 🌸</button>
+      <div class="snap-id" onclick="copySnap()">
+        SNAP_ID_HERE 📋
       </div>
+
+      <p style="font-size: 0.9rem; color: #888;">(Click to Copy)</p>
+      <button class="btn close-btn" onclick="closeModal()">Close</button>
     </div>
-  </section>
+  </div>
+
+
 
   <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/animations.js"></script>
 
 </body>
+
 </html>
